@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-playfair);
+
+  /* Museum palette — values swap via :root / .dark */
+  --color-museum-wall: var(--museum-wall);
+  --color-museum-surface: var(--museum-surface);
+  --color-museum-gold: var(--museum-gold);
+  --color-museum-text: var(--museum-text);
+  --color-museum-muted: var(--museum-muted);
+  --color-museum-frame: var(--museum-frame);
+  --color-museum-spotlight: var(--museum-spotlight);
+}
+
+/* ── Deep Artistic Museum Theme ── */
+:root {
+  --museum-wall: #0a0908; /* Deepest warm black */
+  --museum-surface: #141210; /* Slightly lighter deep brown-black */
+  --museum-gold: #d4af37; /* Classic gold */
+  --museum-text: #f5f0e8; /* Soft warm off-white */
+  --museum-muted: #8c8273; /* Deep warm grey */
+  --museum-frame: #3a3228; /* Dark elegant brown frame */
+  --museum-spotlight: #242019; /* Subtle warm spotlight */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
