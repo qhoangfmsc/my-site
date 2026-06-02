@@ -23,6 +23,35 @@ export const metadata: Metadata = {
   title: "Quoc Hoang",
   description:
     "Personal website of Quoc Hoang — software engineer specializing in modern web development, AI automation, and cloud infrastructure.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/icon.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  manifest: "/manifest.json",
+  openGraph: {
+    title: "Quoc Hoang",
+    description:
+      "Personal website of Quoc Hoang — software engineer specializing in modern web development, AI automation, and cloud infrastructure.",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 1024,
+        height: 1024,
+        alt: "Quoc Hoang Logo",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Quoc Hoang",
+    description:
+      "Personal website of Quoc Hoang — software engineer specializing in modern web development, AI automation, and cloud infrastructure.",
+    images: ["/images/logo.png"],
+  },
 };
 
 export default function RootLayout({

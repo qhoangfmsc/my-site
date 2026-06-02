@@ -6,7 +6,8 @@ import {
   useMotionValueEvent,
   useScroll,
 } from "framer-motion";
-import { Landmark, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { type FC, useState } from "react";
@@ -45,14 +46,18 @@ const MuseumHeader: FC = () => {
             href="/v1"
             className="group flex items-center gap-3 font-display text-lg tracking-wider text-white transition-colors duration-300 hover:text-museum-gold"
           >
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white/5 transition-transform duration-500 group-hover:rotate-12 group-hover:bg-museum-gold/20">
-              <Landmark
-                size={18}
-                className="text-museum-gold drop-shadow-[0_0_10px_rgba(212,175,55,0.8)]"
+            <div className="relative h-9 w-9 overflow-hidden rounded-full ring-1 ring-museum-gold/30 transition-all duration-500 group-hover:ring-museum-gold/60 group-hover:shadow-[0_0_12px_rgba(212,175,55,0.3)]">
+              <Image
+                src="/images/logo.png"
+                alt="qhoangf logo"
+                fill
+                sizes="36px"
+                className="object-cover"
+                priority
               />
             </div>
             <span className="hidden leading-none sm:inline font-bold">
-              DeepMuseum.
+              qhoangf.
             </span>
           </Link>
 
