@@ -93,10 +93,10 @@ const MuseumHeader: FC = () => {
           {/* Right Action / Mobile Nav */}
           <div className="flex items-center gap-4">
             <Link
-              href="/v1/me"
+              href="/v1/home#contact"
               className="hidden rounded-full border border-museum-gold/30 bg-museum-gold/10 px-5 py-2 text-xs font-bold uppercase tracking-widest text-museum-gold transition-all duration-300 hover:bg-museum-gold hover:text-black hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] md:block"
             >
-              Get Ticket
+              Contact me
             </Link>
 
             <button
@@ -139,6 +139,16 @@ const MuseumHeader: FC = () => {
                   </Link>
                 );
               })}
+
+              {/* Contact link */}
+              <div className="mx-6 my-2 h-px bg-white/10" />
+              <Link
+                href="/v1/home#contact"
+                className="block rounded-2xl bg-museum-gold/10 px-6 py-4 text-center font-display text-lg font-bold tracking-widest text-museum-gold transition-colors duration-200 hover:bg-museum-gold/20"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Contact me
+              </Link>
             </div>
           </motion.div>
         )}

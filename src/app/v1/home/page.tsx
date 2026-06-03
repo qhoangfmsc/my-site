@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { WINGS } from "../_internal/data/navigation";
+import ContactNexus from "./_component/sections/ContactNexus";
 import { HeroShowcase } from "./_component/sections/HeroShowcase";
 import { ReviewSection } from "./_component/sections/ReviewSection";
 import { SingularityPortal } from "./_component/sections/SingularityPortal";
@@ -47,7 +48,10 @@ export default function DeepReviewMuseumPage() {
         ))}
       </div>
 
-      {/* Part 3: Cap-off Singularity Space */}
+      {/* Part 3: Contact Section */}
+      <ContactNexus />
+
+      {/* Part 4: Cap-off Singularity Space */}
       <SingularityPortal />
     </div>
   );
