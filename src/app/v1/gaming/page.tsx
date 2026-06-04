@@ -10,14 +10,8 @@ export const metadata: Metadata = {
 
 export default function GamingPage() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-20 md:px-6">
+    <div className="mx-auto max-w-6xl px-4 py-24 md:px-6">
       <div className="mb-20 text-center">
-        <p
-          className="text-xs font-semibold uppercase tracking-[0.3em]"
-          style={{ color: "#F15BB5" }}
-        >
-          The Arcade
-        </p>
         <h1 className="mt-4 font-display text-4xl font-bold tracking-tight md:text-6xl">
           Gaming
         </h1>

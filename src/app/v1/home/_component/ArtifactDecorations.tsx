@@ -169,7 +169,7 @@ export const GamingPCThreeJSComponent = () => {
 
 export const getArtifactRenderer = (slug: string) => {
   switch (slug) {
-    case "daily-life":
+    case "life":
       return renderPolaroid;
     case "work":
       return (wing: (typeof WINGS)[0]) => <WireframeComponent />;

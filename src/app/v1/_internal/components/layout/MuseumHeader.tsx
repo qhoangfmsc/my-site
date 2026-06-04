@@ -38,6 +38,7 @@ const MuseumHeader: FC = () => {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+        style={{ viewTransitionName: "site-header" }}
         className="fixed left-1/2 top-4 z-50 w-[95%] max-w-4xl -translate-x-1/2 rounded-full border border-white/10 bg-black/40 px-6 py-3 shadow-[0_8px_30px_rgb(0,0,0,0.6)] backdrop-blur-2xl transition-colors hover:border-white/20 hover:bg-black/60 md:top-8"
       >
         <nav className="flex items-center justify-between">

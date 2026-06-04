@@ -15,7 +15,7 @@ src/
 │       │
 │       ├── corridor/               # Page: The Corridor
 │       │   └── page.tsx
-│       ├── daily-life/             # Wing: Daily Life
+│       ├── life/             # Wing: Life
 │       │   └── page.tsx
 │       ├── work/                   # Wing: Work
 │       │   └── page.tsx
@@ -67,7 +67,7 @@ src/
 
 | Loại | Convention | Ví dụ |
 |------|-----------|-------|
-| Route folders | `kebab-case` | `daily-life/`, `corridor/` |
+| Route folders | `kebab-case` | `life/`, `corridor/` |
 | Component folders | `kebab-case` | `ui/`, `layout/`, `museum/` |
 | Component files | `PascalCase.tsx` | `MuseumHeader.tsx`, `ScrollReveal.tsx` |
 | Utility files | `kebab-case.ts` | `constants.ts`, `utils.ts` |

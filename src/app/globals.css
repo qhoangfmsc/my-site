@@ -45,4 +45,54 @@ html {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+
+  /* Disable view transition animations */
+  ::view-transition-old(*),
+  ::view-transition-new(*),
+  ::view-transition-group(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
 }
+
+/* ══════════════════════════════════════════════════
+   Museum Page Transitions — View Transitions API
+   Pure crossfade: GPU-composited opacity only
+   ══════════════════════════════════════════════════ */
+
+::view-transition-old(.museum-enter) {
+  animation: 150ms ease-out both museum-fade-out;
+}
+
+::view-transition-new(.museum-enter) {
+  animation: 200ms ease-in 50ms both museum-fade-in;
+}
+
+/* ── Header Anchor: stays fixed during transitions ── */
+::view-transition-group(site-header) {
+  animation: none;
+  z-index: 100;
+}
+
+::view-transition-old(site-header) {
+  display: none;
+}
+
+::view-transition-new(site-header) {
+  animation: none;
+}
+
+/* ── Keyframes ── */
+@keyframes museum-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes museum-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+

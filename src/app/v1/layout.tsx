@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ViewTransition } from "react";
 import MuseumFooter from "./_internal/components/layout/MuseumFooter";
 import MuseumHeader from "./_internal/components/layout/MuseumHeader";
 
@@ -17,10 +18,13 @@ export default function V1Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="min-h-screen bg-museum-wall text-museum-text">
+    <div className="flex min-h-screen flex-col bg-museum-wall text-museum-text">
       <MuseumHeader />
-      <main className="flex-1">{children}</main>
+      <ViewTransition enter="museum-enter" exit="museum-enter">
+        <main className="min-h-screen flex-1">{children}</main>
+      </ViewTransition>
       <MuseumFooter />
     </div>
   );
 }
+

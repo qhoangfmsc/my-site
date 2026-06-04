@@ -48,7 +48,7 @@ export const HeroShowcase = () => {
       {/* Decorative Background Items */}
       <div className="absolute inset-0 pointer-events-none z-0">
         <div className="hero-floating-item absolute left-[10%] top-[15%] w-48 opacity-30 blur-sm -rotate-12">
-          {getArtifactRenderer("daily-life")(WINGS[0])}
+          {getArtifactRenderer("life")(WINGS[0])}
         </div>
         <div className="hero-floating-item absolute right-[15%] top-[20%] w-64 opacity-20 blur-md rotate-20">
           {getArtifactRenderer("work")(WINGS[1])}
@@ -68,14 +68,14 @@ export const HeroShowcase = () => {
           className="mb-6 text-museum-gold opacity-90 drop-shadow-[0_0_15px_rgba(212,175,55,0.5)]"
         />
         <h1 className="mb-6 font-display text-6xl font-bold leading-tight tracking-tight text-white drop-shadow-2xl md:text-8xl">
-          Shattered
+          Curated
           <br />
           <span className="text-transparent bg-clip-text bg-linear-to-r from-museum-white via-museum-gold to-museum-muted">
             Memories.
           </span>
         </h1>
         <p className="max-w-xl text-lg italic text-museum-muted font-light">
-          Scroll to explore the scattered fragments of my journey.
+          A personal exhibition — scroll to explore each chapter.
         </p>
       </div>
     </section>

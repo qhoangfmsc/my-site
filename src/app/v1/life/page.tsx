@@ -3,24 +3,18 @@ import MuseumDivider from "../_internal/components/ui/MuseumDivider";
 import SectionHeading from "../_internal/components/ui/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Daily Life",
+  title: "Life",
   description:
     "The Living Room — a glimpse into everyday moments, routines, and the small things that matter.",
 };
 
 export default function DailyLifePage() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-20 md:px-6">
+    <div className="mx-auto max-w-6xl px-4 py-24 md:px-6">
       {/* ── Wing Entrance ── */}
       <div className="mb-20 text-center">
-        <p
-          className="text-xs font-semibold uppercase tracking-[0.3em]"
-          style={{ color: "#6B8F71" }}
-        >
-          The Living Room
-        </p>
         <h1 className="mt-4 font-display text-4xl font-bold tracking-tight md:text-6xl">
-          Daily Life
+          Life
         </h1>
         <p className="mt-4 text-lg text-museum-muted">
           Everyday rhythms, quiet routines, and the moments in between.

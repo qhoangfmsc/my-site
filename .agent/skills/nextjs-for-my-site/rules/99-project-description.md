@@ -26,7 +26,7 @@ Mỗi version (`v1`, `v2`, ...) là submodule độc lập, không phụ thuộc
 |------|-------|-------------|--------|
 | Home | `/v1` | The Lobby | Entrance, wing previews, CTA to corridor |
 | Corridor | `/v1/corridor` | The Corridor | Vertical scroll timeline — life journey |
-| Daily Life | `/v1/daily-life` | The Living Room | Everyday moments, routines, hobbies |
+| Life | `/v1/life` | The Living Room | Everyday moments, routines, hobbies |
 | Work | `/v1/work` | The Workshop | Projects, tech stack, career |
 | Music | `/v1/music` | The Sound Room | Artists, playlists, music journey |
 | Gaming | `/v1/gaming` | The Arcade | Games, setup, gaming history |

@@ -90,7 +90,7 @@ export const ReviewSection = ({
           {getArtifactRenderer(wing.slug)(wing)}
 
           {/* Supplementary decorations (mini albums or 3D canvas) */}
-          {wing.slug === "daily-life" && (
+          {wing.slug === "life" && (
             <>
               <div className="supplementary-item absolute -left-12 -top-12 h-32 w-24 bg-white/10 p-2 shadow-2xl backdrop-blur-sm transform rotate-[-20deg] border border-white/20" />
               <div className="supplementary-item absolute -right-8 -bottom-16 h-40 w-32 bg-white/10 p-2 shadow-2xl backdrop-blur-sm transform rotate-[15deg] border border-white/20" />
@@ -120,7 +120,7 @@ export const ReviewSection = ({
         </div>
 
         {/* Content info side */}
-        <div className="review-content flex flex-1 flex-col justify-center items-center text-center lg:items-start lg:text-left p-8 bg-museum-surface/20 rounded-3xl backdrop-blur-md border border-museum-frame/10 z-10 pointer-events-auto shadow-2xl">
+        <div className="review-content flex flex-1 flex-col justify-center items-center text-center lg:items-start lg:text-left p-8 bg-museum-surface/40 rounded-3xl backdrop-blur-md border border-museum-frame/30 z-10 pointer-events-auto shadow-2xl">
           <p
             className="mb-4 text-xs font-bold uppercase tracking-[0.4em]"
             style={{ color: wing.accentColor }}

@@ -10,14 +10,8 @@ export const metadata: Metadata = {
 
 export default function WorkPage() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-20 md:px-6">
+    <div className="mx-auto max-w-6xl px-4 py-24 md:px-6">
       <div className="mb-20 text-center">
-        <p
-          className="text-xs font-semibold uppercase tracking-[0.3em]"
-          style={{ color: "#4A6FA5" }}
-        >
-          The Workshop
-        </p>
         <h1 className="mt-4 font-display text-4xl font-bold tracking-tight md:text-6xl">
           Work
         </h1>
